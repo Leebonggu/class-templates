@@ -51,7 +51,7 @@ class Tmeplate {
     `;
   }
 }
-type Intance = {
+type Instance = {
   header: string;
   contents: string;
 };
@@ -62,7 +62,7 @@ export class TemplateFactory {
     throw new Error("Use TemplateFactory.getInstance()");
   }
 
-  public static getInstance({ header, contents = "" }: Intance) {
+  public static getInstance({ header, contents = "" }: Instance) {
     if (!TemplateFactory.instance) {
       TemplateFactory.instance = new Tmeplate({ header, contents });
     }
