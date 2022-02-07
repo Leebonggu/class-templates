@@ -62,7 +62,7 @@ export class TemplateFactory {
     throw new Error("Use TemplateFactory.getInstance()");
   }
 
-  public static getInstance({ header, contents = "" }: Instance) {
+  public static getInstance({ header, contents }: Instance) {
     if (!TemplateFactory.instance) {
       TemplateFactory.instance = new Tmeplate({ header, contents });
     }

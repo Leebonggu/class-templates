@@ -18,19 +18,19 @@ export const header = ({ title, next_line_title, description }: Config) => {
       ${
         next_line_title
           ? `
-        <tr>
-          <td class="h1">${next_line_title}</td>
-        </tr>
-      `
+            <tr>
+              <td class="h1">${next_line_title}</td>
+            </tr>
+          `
           : '<div style="diplay: none"></div>'
       }
       ${
         description
           ? `
-        <tr>
-          <td class="font-normal pt-1">${description}.</td>
-        </tr>
-      `
+          <tr>
+            <td class="font-normal pt-1">${description}.</td>
+          </tr>
+        `
           : '<div style="diplay: none"></div>'
       }
       </tr>
